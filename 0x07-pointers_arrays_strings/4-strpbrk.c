@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *  _strpbrk - matches any character specified
- *  @s: This is the C string to be scanned
- *  @accept: character in str1 that matches any characters in str2
- *  Return: string s that matches any character specified in accept
+ * _strpbrk - matches any character specified
+ * @s: This is the C string to be scanned
+ * @accept: character in str1 that matches any characters in str2
+ * Return: string s that matches any character specified in accept
  */
    char *_strpbrk(char *s, char *accept)
 {
@@ -12,13 +12,19 @@
 
 	while (*s != '\0')
 	{
-		if (*s == accept[j])
+
+		j = 0;
+		while (accept[j] != '\0')
 		{
-			return (s);
+
+			if (*s == accept[j]) 
+			{
+
+				return (s);
+			}
+			j++;
 		}
-		j++;
+		s++;
 	}
-	s++;
-        }
-  return (0);
+	return (0);
 }
