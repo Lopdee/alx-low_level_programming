@@ -1,5 +1,7 @@
+#include "function_pointers.h"
+#include <stdl io.h>
+#include <stdio.h>
 #include "3-calc.h"
-
 /**
  * main - program that perfroms simple operations
  * @argc: number of arguments
@@ -44,3 +46,4 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
+
